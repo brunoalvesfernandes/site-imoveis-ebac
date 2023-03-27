@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    font-family: 'Baskervville', serif;
+}
+
+.blur {
+    filter: blur(6px);
+}
+
+header {
+    background-color: rgb(17, 16, 39);
+    padding: 16px 0;
+    color: #ccc;
+    height: 100px;
+    z-index: 3;
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+header img{
+    height: 100px;
+    margin-top: -30px;
+}
+
+.container,
+.container-flex {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1020px;
+    width: 100%;
+    margin: 16px auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.container-flex > span {
+    display: flex;
+}
+
+.container-flex h1 {
+    margin: 10px 0;
+    font-size: 24px
+}
+
+.menu-smart span {
+    background-color: #ccc;
+    height: 5px;
+    width: 40px;
+    display: block;
+    margin: 8px 0;
+}
+
+.menu-smart {
+    cursor: pointer;
+    margin-right: 16px;
+    margin-top: -16px;
+}
+
+#sub-menu {
+    background-color: rgb(0, 0, 0);
+    display: none;
+    margin-top: -20px;
+}
+
+#sub-menu ul {
+    width: 100%;
+    display: flex;
+    padding: 16px 0;
+    margin-bottom: -32px;
+    list-style-type: none;
+}
+
+#sub-menu ul li{
+    margin: 0 40px;
+}
+
+#sub-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#slide-casas-local {
+    background-image: url('./img/imoveis.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    margin-top: 100px;
+}
+
+#slide-casas {
+    position: absolute;
+    overflow-x: hidden;
+    max-width: 900px;
+    align-content: center;
+    text-align: center;
+    left: calc(50% - 450px);
+    padding: 50px 0 ;
+}
+
+#slide-casas img {
+    height: 500px;
+    width: 1020px;
+    border-radius: 5px;
+}
+
+.slick-arrow {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: #ccc;
+}
+
+.slick-arrow:hover {
+    background-color: #ccccccad;
+}
+
+.slick-next {
+    right: 0;
+    bottom: calc(50% - 17.5px);
+}
+
+.slick-prev {
+    left: 0;
+    top: calc(50% - 17.5px);
+}
+
+.fechar {
+    position: absolute;
+    background-color: rgba(240, 248, 255, 0.733);
+    color: black;
+    top: -10px;
+    right:-10px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 8px 0;
+}
+.fechar:hover {
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+}
+
+#form-casa{
+    position:fixed;
+    display:block;
+    max-width: 900px;
+    min-width: 600px;
+    width: 100%;
+    height: 500px;
+    background-image: url('./img/Design20sem20nome.jpg');
+    background-size:cover;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #cccccca4;
+}
+
+.base-form form {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    padding-top: 20px;
+    text-shadow: 2px 0 #ccc, -2px 0 #ccc, 0 2px #ccc, 0 -2px #ccc, 1px 1px #ccc, -1px -1px #ccc, 1px -1px #ccc, -1px 1px #ccc;
+}
+
+.base-form form input,
+.base-form form textarea{
+    height: 30px;
+    width: 70%;
+    margin: 5px 15%;
+    text-align: center;
+}
+
+.base-form form textarea{
+    resize: none;
+    height: 50px;
+}
+
+.base-form button {
+    width: 30%;
+    margin: 20px calc(50% - 15%);
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #066103;
+    color: #ccc;
+}
+
+.base-form button:hover {
+    background-color: #06a101;
+}
+
+#imoveis-pesquisar {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.card,
+.card-casa {
+    position: relative;
+    min-width: 350px;
+    max-width: 350px;
+    text-align:left;
+    margin: 16px 16px;
+    max-height: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card h3 {
+    margin: 8px 0;
+}
+
+.card img {
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+}
+
+.a-flex {
+    display: flex;
+    max-width: 1300px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 24px auto;
+    flex-wrap: wrap;
+}
+
+#casas-comprar {
+    text-align: center;
+}
+
+#casas-comprar h2{
+    margin: 50px auto;
+}
+
+.card-casa h3,
+.card-casa p,
+.card-casa button {
+    position: relative;
+    margin: 16px 0;
+    z-index: 2;
+}
+
+.card-casa{
+    overflow: hidden;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.card-casa img {
+    height: 250px;
+    z-index: 1;
+    width: 350px;
+}
+
+.focus-card-casa {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.726);
+    z-index: 2;
+    color: white;
+    width: 350px;
+    top: 90px;
+    height: 170px;
+}
+
+.comprar,
+.sobre {
+    position: relative;
+    border: none;
+    height: 25px;
+    width: 50%;
+    cursor: pointer;
+    color: #fff;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.comprar:hover,
+.sobre:hover {
+    border: 2px solid #000;
+    color: black;
+}
+
+.comprar {
+    float: right;
+    background-color: #066103;
+}
+
+.sobre {
+    float: right;
+    background-color: rgb(119, 121, 3);
+}
+
+#mais{
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    float: right;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -25px;
+}
+
+#mais:hover {
+    color: #07a001;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 30px;
+    background-color: rgb(17, 16, 39);
+    color: #ccc;
+}
+
+.redes {
+    margin-bottom: 10px;
+}
+
+.redes img {
+    height: 50px;
+    align-items: center;
+    padding: 8px 0;
+    margin: 8px 8px;
+    opacity: .7;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #slide-casas-local {
+        zoom: 50%;
+    }
+
+    .fechar {
+        right: 150px;
+    }
+}
